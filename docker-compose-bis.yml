@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  app:
+    build: ./app
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgres://avnadmin:AVNS_v6ZA9aNpBLRqQ2eNwhb@pg-92b2a9d-maxime-7f47.a.aivencloud.com:25289/defaultdb?sslmode=require
