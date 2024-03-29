@@ -33,9 +33,9 @@ Cette commande construit l'image de l'application à partir du Dockerfile situé
 
 Ce fichier Docker Compose est configuré pour connecter l'application à une instance PostgreSQL hébergée (dans cet exemple, sur Aiven Cloud). Il ne démarre pas de conteneur pour la base de données PostgreSQL localement mais configure l'application pour se connecter à une base de données distante.
 
-Pour l'utiliser, renommez `docker-compose-bis.yml` en `docker-compose.yml` et exécutez :
+Pour l'utiliser :
 ```
-docker-compose up --build
+docker-compose -f docker-compose-bis.yml up --build
 ```
 
 ## Différences entre les deux configurations Docker Compose
